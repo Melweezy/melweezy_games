@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     padding: 0;
     margin: 0;
@@ -133,3 +134,140 @@ p{
     font-weight: bold;
     font-size: 50px;
 }
+=======
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+body{
+    background-color: teal;
+}
+#title{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 70px;   
+}
+.game{
+    width: 1000px;
+    height: 680px;
+    border: 6px solid black;
+    margin: auto;
+    margin-top: 40px;
+}
+#background{
+    position: absolute;
+    overflow: hidden;
+    height: 680px;
+    width: 1000px;
+}
+#character{
+    position:relative;
+    top: 460px;
+    left: 60px;
+	width:120px;
+	height:120px;
+	background-size: cover;
+    background-image: url('doodler-guy.png');
+    z-index: 10;
+}
+.jump{
+    animation: jump 0.5s ease;
+}
+@keyframes jump{
+    0%{top: 460px;}
+    20%{top: 250px;}
+    40%{top: 200px;}
+    60%{top: 250px;}
+    80%{top: 300px;}    
+    100%{top: 440px;}  
+}
+#block{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 250px;
+    left: 1000px;  
+    animation: block 2s infinite linear; 
+    background-image: url('flappy-bird.png');
+    background-size: cover;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    z-index: 11;
+}
+@keyframes block{
+    0%{left: 1000px}
+    100%{left: -20px}
+}
+#bird1{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 40px;
+    left: 700px;  
+    animation: block 3s infinite linear; 
+    background-image: url('flappy-bird.png');
+    background-size: cover;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    opacity: 0.6;
+}
+#bird2{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -120px;
+    left: 1000px;  
+    animation: block 5s infinite linear; 
+    background-image: url('flappy-bird.png');
+    background-size: cover;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    opacity: 0.6;
+}
+#bird3{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 20px;
+    left: 1000px;  
+    animation: block 4s infinite linear; 
+    background-image: url('flappy-bird.png');
+    background-size: cover;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    opacity: 0.6;
+}
+@keyframes bird1{
+    0%{left: 1000px}
+    100%{left: -20px}
+}
+@keyframes bird2{
+    0%{left: 1000px}
+    100%{left: -20px}
+}
+@keyframes bird3{
+    0%{left: 1000px}
+    100%{left: -20px}
+}
+#pipe{
+    width: 80px;
+    height: 200px;
+    position: relative;
+    top: 130px;
+    left: 980px;  
+    background-image: url('flappybird-pipe.png');
+    background-size: cover; 
+    transform: rotate(-90deg);
+    z-index: 12;
+}
+p{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 50px;
+}
+>>>>>>> 8576b3043026227b5d96d2e0651d24c6eb6afd58
