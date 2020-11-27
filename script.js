@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 var character = document.getElementById("character");
 var block = document.getElementById("block");
 var counter=0;
@@ -13,20 +11,6 @@ document.addEventListener('keyup', event => {
     },300);
       }
 });
-document.addEventListener('keyup', event => {
-    if (event.code === 'KeyD') {
-        let characterLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-        characterLeft+10;
-}});
-// document.addEventListener('keyup', event => {
-//     if (event.code === "KeyA") {
-//       if(character.classList == "animate"){return}
-//     character.classList.add("animate");
-//     setTimeout(function(){
-//         character.classList.remove("animate");
-//     },300);
-//       }
-// });
 var checkDead = setInterval(function() {
     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
